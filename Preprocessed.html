@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preprocessed Food</title>
+</head>
+<body>
+    <h1>Preprocessed Food</h1>
+    <div>
+        <p>$: <span id="money">100</span></p>
+        
+    </div>
+    <table>
+        <tr>
+            <th>Ketchup</th>
+            <th>$10/Bottle</th>
+            <td><span>Units:</span><input type="number" id="ketchup"></td>
+            <td><button onclick="buy(document.getElementById('ketchup'),10)">Buy</button></td>
+            <td><button onclick="sell(document.getElementById('ketchup'),10)">Sell</button></td>
+        </tr>
+        <tr>
+            <th>Noodles</th>
+            <th>$20/Pack</th>
+            <td><span>Units:</span><input type="number" id="noodles"></td>
+            <td><button onclick="buy(document.getElementById('noodles'),20)">Buy</button></td>
+            <td><button onclick="sell(document.getElementById('noodles'),10)">Sell</button></td>
+        </tr>
+        <tr>
+            <th>Canned beans</th>
+            <th>$20/Can</th>
+            <td><span>Units:</span><input type="number" id="beans"></td>
+            <td><button onclick="buy(document.getElementById('beans'),20)">Buy</button></td>
+            <td><button onclick="sell(document.getElementById('beans'),20)">Sell</button></td>
+        </tr>
+        <tr>
+            <th>Bread</th>
+            <th>$30/Loaf</th>
+            <td><span>Units:</span><input type="number" id="bread"></td>
+            <td><button onclick="buy(document.getElementById('bread'),30)">Buy</button></td>
+            <td><button onclick="sell(document.getElementById('bread'),30)">Sell</button></td>
+        </tr>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>

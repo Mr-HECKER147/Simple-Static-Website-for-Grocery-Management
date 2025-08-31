@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Products</title>
+</head>
+<body>
+    <h1>Milk Products</h1>
+    <div>
+        <p>$: <span id="money">100</span></p>
+        
+    </div>
+    <table>
+        <tr>
+            <th>Cheese</th>
+            <th>$5/Pack</th>
+            <td><span>Units:</span><input type="number" id="cheese"></td>
+            <td><button onclick="buy(document.getElementById('cheese'),5)">Buy</button></td>
+            <td><button onclick="sell(document.getElementById('cheese'),5)">Sell</button></td>
+        </tr>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>
